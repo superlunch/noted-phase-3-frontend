@@ -1,38 +1,110 @@
-.App {
+.navbar {
   text-align: center;
+  height: 50px;
+  background: whitesmoke;
+  border: 2px solid black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  margin-left: 250px;
+  font-size: 26px;
+ padding-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:flex-start;
+  padding-left: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.HomeLink{
+padding-right: 20px;
+padding-top:10px;
+font-size: 26px;
+text-decoration-line: none;
+color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.HomeLink:hover { 
+  transform: scale(1);
+  border: 2px solid black;
+  box-shadow: 1px 4px 30px black;
+  cursor: pointer;
+}
+
+.FeedLink{
+  padding-right: 20px;
+  padding-top:10px;
+  font-size: 26px;
+  text-decoration-line: none;
+  color: black;
+}
+
+.FeedLink:hover { 
+  transform: scale(1);
+  border: 2px solid black;
+  box-shadow: 1px 4px 30px black;
+  cursor: pointer;
+}
+
+
+
+.ProjectsLink{
+  padding-right: 20px;
+  padding-top:10px;
+font-size: 26px;
+text-decoration-line: none;
+color: black;
+}
+
+.ProjectsLink:hover { 
+  transform: scale(1);
+  border: 2px solid black; 
+  box-shadow: 1px 4px 30px black;
+  cursor: pointer;
+}
+
+
+
+.Profile{
+  margin-left: 200px;
+font-size: 26px;
+padding-top:10px;
+text-decoration-line: none;
+color: black;
+}
+
+.Profile:hover { 
+  transform: scale(1);
+  border: 2px solid black;
+  box-shadow: 1px 4px 30px black;
+  cursor: pointer;
+}
+
+#Search{
+  border: 2px solid grey;
+  border-radius: 5px;
+  height: 25px;
+  width: 30%;
+  margin-left: 575px;
+  margin-top: 10px;
+  padding: 2px 90px 2px 30px;
+  outline: 0;
+  background-color: white;
+}
+
+#Search:hover { 
+  transform: scale(1);
+  border: 2px solid black;
+  box-shadow: 1px 4px 30px black;
+  cursor: pointer;
+}
+
+
+.search-icon {
+  position: absolute;
+  top: 23px;
+  left: 1350px;
+  width: 14px;
+  cursor: pointer;
 }
