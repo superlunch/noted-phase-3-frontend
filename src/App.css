@@ -1,87 +1,100 @@
-.navbar {
-  text-align: center;
-  height: 50px;
-  background: whitesmoke;
-  border: 2px solid black;
+:root {
+  --my-grey: #404444;
 }
 
-.logo{
-  margin-left: 250px;
-  font-size: 26px;
- padding-bottom: 10px;
+.navbar {
+  text-align: center;
+  height: 40px;
+  background: whitesmoke;
+  /* border: 2px solid black; */
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  height: 50vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .links {
   display: flex;
-  justify-content:flex-start;
-  padding-left: 150px;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 
-.HomeLink{
-padding-right: 20px;
-padding-top:10px;
-font-size: 26px;
-text-decoration-line: none;
-color: black;
-}
-
-.HomeLink:hover { 
-  transform: scale(1);
-  border: 2px solid black;
-  box-shadow: 1px 4px 30px black;
-  cursor: pointer;
-}
-
-.FeedLink{
-  padding-right: 20px;
-  padding-top:10px;
-  font-size: 26px;
+.HomeLink {
+  height: 40px;
+  width: 50px;
+  display: grid;
+  font-size: 20px;
   text-decoration-line: none;
-  color: black;
+  color: grey;
+  align-content: center;
 }
 
-.FeedLink:hover { 
-  transform: scale(1);
-  border: 2px solid black;
-  box-shadow: 1px 4px 30px black;
+.HomeLink:hover {
+  color: whitesmoke;
+  background-color: var(--my-grey);
   cursor: pointer;
 }
 
-
-
-.ProjectsLink{
-  padding-right: 20px;
-  padding-top:10px;
-font-size: 26px;
-text-decoration-line: none;
-color: black;
+.FeedLink {
+  height: 40px;
+  width: 50px;
+  display: grid;
+  font-size: 20px;
+  text-decoration-line: none;
+  color: grey;
+  align-content: center;
 }
 
-.ProjectsLink:hover { 
-  transform: scale(1);
-  border: 2px solid black; 
-  box-shadow: 1px 4px 30px black;
+.FeedLink:hover {
+  color: whitesmoke;
+  background-color: var(--my-grey);
   cursor: pointer;
 }
 
+.ProjectsLink {
+  height: 40px;
+  width: 50px;
+  display: grid;
+  font-size: 20px;
+  text-decoration-line: none;
+  color: grey;
+  align-content: center;
+}
 
+.ProjectsLink:hover {
+  color: whitesmoke;
+  background-color: var(--my-grey);
+  cursor: pointer;
+}
 
-.Profile{
+.Profile {
   margin-left: 200px;
-font-size: 26px;
-padding-top:10px;
-text-decoration-line: none;
-color: black;
+  font-size: 26px;
+  padding-top: 10px;
+  text-decoration-line: none;
+  color: var(--my-grey);
 }
 
-.Profile:hover { 
+.Profile:hover {
   transform: scale(1);
   border: 2px solid black;
   box-shadow: 1px 4px 30px black;
   cursor: pointer;
 }
 
-#Search{
+#Search {
   border: 2px solid grey;
   border-radius: 5px;
   height: 25px;
@@ -93,13 +106,12 @@ color: black;
   background-color: white;
 }
 
-#Search:hover { 
+#Search:hover {
   transform: scale(1);
   border: 2px solid black;
   box-shadow: 1px 4px 30px black;
   cursor: pointer;
 }
-
 
 .search-icon {
   position: absolute;

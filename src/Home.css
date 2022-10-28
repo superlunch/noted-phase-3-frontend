@@ -1,14 +1,14 @@
 .HBContainer {
-    display: flex;
-    overflow-x: scroll;
-    cursor: pointer;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  display: flex;
+  overflow-x: scroll;
+  cursor: pointer;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 .right-container {
-    margin-top: 130px;
+  margin-top: 130px;
 }
 
 /* .avatar {
@@ -24,48 +24,66 @@ justify-content:space-between;
 -webkit-justify-content:space-between;
 } */
 
-#home-title{
-    margin-bottom: 60px;
+#home-title {
+  margin-bottom: 60px;
 }
 
 .userInput {
-background: lightgray ;
-    border: 1px solid black ;
-    margin-left: 100px;
-    padding-right:20px;
-    padding-top: 60px;
-    width: 350px;
-    height: 350px;
-    border-radius: 15px;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 1px 4px 10px black;
+  display: flex;
+  background: whitesmoke;
+  margin-bottom: 100px;
+  padding: 20px;
+  padding-bottom: 0;
+  height: 200px;
+  width: 300px;
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px 4px 10px black;
+  align-items: center;
 }
 
-.Pboard-img {
-    height: 400px;
-    width: 450px;
-    border: solid 2px blue;
-    border-radius: 40px;
-    box-shadow: 1px 4px 30px black;
-}
-
-.PBoard {
-    position: relative;
-    left: 300px;
-    bottom: 550px;
-    
+.home-container {
+  display: grid;
+  justify-content: center;
 }
 
 .Form-group {
-    padding-top: 10px;
-    flex-direction: column;
-    justify-content: center;
+  padding-top: 10px;
 }
 
 .userbtn {
-    position: center;
-    text-decoration: underline;
-   cursor: pointer;
+  font-size: 11px;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
+.btn {
+  color: white;
+  background-color: grey;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  transition: 0.4s;
+  transform: translateY(-2px);
+}
+
+.input {
+  border: 1px solid #dadce0;
+  border-radius: 7px;
+  font-size: 16px;
+  outline: none;
+}
+
+.Content {
+  padding-bottom: 10px;
 }

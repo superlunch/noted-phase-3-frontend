@@ -1,29 +1,31 @@
 import React from "react";
-import "./Project.css"
+import "./Project.css";
 
 function Project() {
   return (
-    <div className="upload">
-      <form id="formCon">
-        <label className="label">Photo Url: </label>
-        <input 
-        className="inputline"
-         type="text" 
-        placeholder="photo..."/>
-
-        <label className="label">Author: </label>
-        <input 
-        className="inputline"
-        type="text" 
-        placeholder="author..."/>
-
-        <label className="label">Submit: </label>
-        <input 
-        className="submitline" 
-        type="submit" 
-        placeholder="submit"/>
-
-      </form>
+    <div>
+      <div className="home-container">
+        <div className="new-note">
+          <form className="Form-container">
+            <div className="Form-group">
+              <label className="label"></label>
+              <input className="titleinput" type="text" placeholder="Title" />
+            </div>
+            <div className="Form-group">
+              <label className="label"></label>
+              <textarea
+                className="noteinput"
+                type="text"
+                placeholder="Start typing..."
+              />
+            </div>
+            <div className="Form-group">
+              <label className="label"></label>
+              <button className="btn" type="submit" placeholder="submit">create</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

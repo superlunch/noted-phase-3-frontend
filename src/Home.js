@@ -1,18 +1,17 @@
-import React from 'react'
-import "./Home.css"
-import HTCon from './HTCon';
-import HBCon from './HBCon';
+import React from "react";
+import "./Home.css";
+import HTCon from "./HTCon";
 
-function Home({users, stockImages}) {
+function Home({ stockImages }) {
   return (
     <div>
-<h1 id="home-title"> Vizpo </h1>
+      <header className="App-header">
+        <img src="noted wide-1.png" className="App-logo" alt="logo" />
+      </header>
 
-<HTCon stockImages={stockImages}/>
-<HBCon users={users}/>
-
+      <HTCon stockImages={stockImages} />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
