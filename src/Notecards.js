@@ -7,7 +7,7 @@ function Notecards({ notes, projects }) {
   const [noteTitle, setNoteTitle] = useState("");
   const [noteBody, setNoteBody] = useState("");
 
-  const [projectTitle, setProjectTitle] = useState("");
+  // const [projectTitle, setProjectTitle] = useState("");
 
   function handleDeleteNote() {
     fetch(`http://localhost:9292/notes/${notes.id}`, {
@@ -46,13 +46,13 @@ function Notecards({ notes, projects }) {
     window.location.reload();
   }
 
-  function getTitle({ notes }) {
-    fetch(`http://localhost:9292/test/${notes.id}`)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      }, []);
-  }
+  // function getTitle({ notes }) {
+  //   fetch(`http://localhost:9292/test/${notes.id}`)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //     }, []);
+  // }
 
   return (
     <div className="feed">
@@ -74,7 +74,7 @@ function Notecards({ notes, projects }) {
             {notes.title}
           </div>
         )}
-        <div className="line"> </div>
+        <div className="line"></div>
         <div className="notecontent">
           {isEditingBody ? (
             <form>
@@ -100,7 +100,7 @@ function Notecards({ notes, projects }) {
             </p>
           )}
           <i className="bx bx-x" id="delete" onClick={handleDeleteNote}></i>
-          {/* <div id="submit">project</div> */}
+          {/* <div id="submit">{notes.project_id}</div> */}
         </div>
       </div>
     </div>

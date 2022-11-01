@@ -14,10 +14,10 @@
 + Create notes & add them to project categories
 + Edit note bodies & titles
 + Delete notes
-+ Search notes by project category or contents
++ Filter notes by project category
 
 <br>
 <br>
 
 ## Credits
-+ [Noted](https://github.com/superlunch/phase-3-proj) web app by [Scout Cox](https://github.com/superlunch) and [Christian Cedeno](https://github.com/#) @ Flatiron School, 2022
++ [Noted](https://github.com/superlunch/phase-3-proj) web app by [Scout Cox](https://github.com/superlunch) and [Christian Cedeno](https://github.com/cedenoc181) @ Flatiron School, 2022

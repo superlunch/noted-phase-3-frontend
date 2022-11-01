@@ -39,7 +39,6 @@ function App() {
       });
   }, []);
 
-
   return (
     <div>
       <Navbar />
@@ -50,6 +49,7 @@ function App() {
           element={<Notes notes={notes} projects={projects} />}
         />
         <Route path="/new-note" element={<NewNote />} />
+        {/* <Route path="*" element={<h1>404 Not Found</h1>} /> */}
       </Routes>
       <Footer />
     </div>

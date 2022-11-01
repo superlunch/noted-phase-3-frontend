@@ -131,3 +131,7 @@ footer {
   left: 0;
   top: 0;
 }
+
+.search-header {
+  height: 40px;
+}
