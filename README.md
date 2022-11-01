@@ -14,7 +14,7 @@
 + Create notes & add them to project categories
 + Edit note bodies & titles
 + Delete notes
-+ Filter notes by project category
++ ~~Filter notes by project category~~
 
 <br>
 <br>
