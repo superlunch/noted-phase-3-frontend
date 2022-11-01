@@ -2,10 +2,11 @@ import React from "react";
 import NoteCon from "./NoteCon";
 import "./Feed.css";
 
-function Notes({ note }) {
+
+function Notes({ notes, projects }) {
   return (
     <div>
-      <NoteCon notes={note} />
+      <NoteCon notes={notes} projects={projects}/>
     </div>
   );
 }

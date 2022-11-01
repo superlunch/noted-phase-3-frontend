@@ -1,38 +1,21 @@
 .feed {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-column-gap: 50px;
+  justify-items: center;
+  width: 60%;
 }
 
 .column {
-  -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
-  padding: 0 4px;
+  position: relative;
+  padding: 4px;
   border: solid 1px;
-  margin-top: 10%;
+  margin: 40px;
+  margin-bottom: 0;
   background-color: whitesmoke;
-}
-
-.column img {
-  margin-top: 18px;
-}
-
-.feed-img {
-  width: 300px;
   height: 300px;
-  border: solid 2px;
 }
 
-.impressions {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  width: 200px;
-  margin-left: 40px;
-  cursor: pointer;
-  background-color: transparent;
-}
 .post-setting {
   display: flex;
   justify-content: flex-start;
@@ -49,7 +32,36 @@
 .photocred {
   text-align: left;
   width: 100;
+  margin-left: 2px;
 }
+
+.projtitle {
+  color: grey;
+  font-style: italic;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+#delete {
+  font-size: 24px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+#submit {
+  font-size: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+
 
 /* #Search{
    border: 2px solid grey;

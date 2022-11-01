@@ -44,6 +44,14 @@
   padding-bottom: 8px;
 }
 
+.titleinput2 {
+  border: 1px solid #dadce0;
+  border-radius: 7px;
+  font-size: 16px;
+  outline: none;
+  /* width: 200px; */
+}
+
 .noteinput {
   border: 1px solid #dadce0;
   border-radius: 7px;
@@ -53,6 +61,18 @@
   height: 500px;
   padding: 15px;
   font-family: 'Helvetica Neue';
+}
+
+.noteinput2 {
+  border: 1px solid #dadce0;
+  border-radius: 7px;
+  font-size: 16px;
+  outline: none;
+  width: 275px;
+  height: 180px;
+  padding: 15px;
+  font-family: 'Helvetica Neue';
+  word-break: break-word;
 }
 
 .new-note {

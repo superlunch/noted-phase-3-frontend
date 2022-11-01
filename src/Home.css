@@ -58,14 +58,20 @@ justify-content:space-between;
   cursor: pointer;
 }
 
+.Form-container {
+  display: grid;
+  justify-items: center;
+}
+
 .btn {
+  display: grid;
   color: white;
   background-color: grey;
   cursor: pointer;
   font-size: 14px;
   border-radius: 25px;
   border: none;
-  text-align: center;
+  align-content: center;
   width: 100px;
   height: 30px;
   margin-top: 10px;
@@ -75,6 +81,32 @@ justify-content:space-between;
 .btn:hover {
   transition: 0.4s;
   transform: translateY(-2px);
+}
+
+.btn2 {
+  color: white;
+  background-color: grey;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.btn2:hover {
+  transition: 0.4s;
+  transform: translateY(-2px);
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .input {

@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Notecards from "./Notecards";
 
-function NoteCon({ note }) {
+function NoteCon({ notes, projects }) {
   return (
-    <div className="feed">
-      {note.map((notes) => (
-        <Notecards key={notes.id} feed={notes} />
-      ))}
+    <div>
+      <div className="feed">
+        {notes.map((notes) => (
+          <Notecards key={notes.id} notes={notes} projects={projects} />
+        ))}
+      </div>
     </div>
   );
 }

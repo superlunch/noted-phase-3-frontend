@@ -1,18 +1,16 @@
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Navbar from "./Navbar";
 import Home from "./Home";
 import Notes from "./Notes";
-import Project from "./Project";
-// import Profile from "./Profile"
+import NewNote from "./NewNote";
+import Footer from "./Footer";
 
 function App() {
   const [users, setUsers] = useState([]);
   const [notes, setNotes] = useState([]);
-
-  // use mockaroo api when proj is ready
-  // https://my.api.mockaroo.com/users1025221258.json?key=e1ac8d70
-  // https://hub.dummyapis.com/employee?noofRecords=10&idStarts=1001
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:9292/users")
@@ -32,28 +30,28 @@ function App() {
       });
   }, []);
 
+  useEffect(() => {
+    fetch("http://localhost:9292/projects")
+      .then((res) => res.json())
+      .then((data) => {
+        setProjects(data);
+        console.log(data);
+      });
+  }, []);
+
+
   return (
-    <div className="navbar sticky">
-      <nav className="links">
-        <Link className="HomeLink" to="/">
-          <i class="bx bxs-home"></i>
-        </Link>
-
-        <Link className="FeedLink" to="/Notes">
-          <i class="bx bx-library"></i>
-        </Link>
-
-        <Link className="ProjectsLink" to="/Projects">
-          <i class="bx bxs-pen"></i>
-        </Link>
-      </nav>
+    <div>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home users={users} />} />
-        <Route path="/Notes" element={<Notes notes={notes} />} />
-        <Route path="/Projects" element={<Project />} />
-        {/* <Route path="nav" element={null} />
-        <Route path="nav" element={null} /> */}
+        <Route
+          path="/notes"
+          element={<Notes notes={notes} projects={projects} />}
+        />
+        <Route path="/new-note" element={<NewNote />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

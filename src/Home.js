@@ -6,7 +6,7 @@ function Home({ stockImages }) {
   return (
     <div>
       <header className="App-header">
-        <img src="noted wide-1.png" className="App-logo" alt="logo" />
+        <img src="noted-wide-1.png" className="App-logo" alt="logo" />
       </header>
 
       <HTCon stockImages={stockImages} />
